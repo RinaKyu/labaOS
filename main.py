@@ -108,56 +108,69 @@ class MainWindow(QMainWindow):
                 self.ui.tableWidget_rr_sjf.setItem(row_index, column_index, QTableWidgetItem(self.algorithm5.visual_representation[row_index][column_index]))
         
     def line_fcfs(self):
-        num = int(str(self.ui.lineEdit_6.text()))
-        self.algorithm.add_process(num)
-        self.algorithm2.add_process(num)
-        self.algorithm3.add_process(num)
-        self.algorithm4.add_process(num)
-        self.algorithm5.add_process(num)
-        self.ui.lineEdit_6.clear()
-        self.update_data()
+        try:
+            num = int(str(self.ui.lineEdit_6.text()))
+            self.algorithm.add_process(num)
+            self.algorithm2.add_process(num)
+            self.algorithm3.add_process(num)
+            self.algorithm4.add_process(num)
+            self.algorithm5.add_process(num)
+            self.ui.lineEdit_6.clear()
+            self.update_data()
+        except ValueError:
+            pass
     
     def line_rr(self):
-        num = int(str(self.ui.lineEdit_5.text()))
-        self.algorithm.add_process(num)
-        self.algorithm2.add_process(num)
-        self.algorithm3.add_process(num)
-        self.algorithm4.add_process(num)
-        self.algorithm5.add_process(num)
-        self.ui.lineEdit_5.clear()
-        self.update_data()
+        try:    
+            num = int(str(self.ui.lineEdit_5.text()))
+            self.algorithm.add_process(num)
+            self.algorithm2.add_process(num)
+            self.algorithm3.add_process(num)
+            self.algorithm4.add_process(num)
+            self.algorithm5.add_process(num)
+            self.ui.lineEdit_5.clear()
+            self.update_data()
+        except ValueError:
+            pass
 
     def line_sjf(self):
-        num = int(str(self.ui.lineEdit_4.text()))
-        self.algorithm.add_process(num)
-        self.algorithm2.add_process(num)
-        self.algorithm3.add_process(num)
-        self.algorithm4.add_process(num)
-        self.algorithm5.add_process(num)
-        self.ui.lineEdit_4.clear()
-        self.update_data()   
+        try: 
+            num = int(str(self.ui.lineEdit_4.text()))
+            self.algorithm.add_process(num)
+            self.algorithm2.add_process(num)
+            self.algorithm3.add_process(num)
+            self.algorithm4.add_process(num)
+            self.algorithm5.add_process(num)
+            self.ui.lineEdit_4.clear()
+            self.update_data()
+        except ValueError:
+            pass   
 
     
     def line_psjf(self):
-        num = int(str(self.ui.lineEdit_3.text()))
-        self.algorithm.add_process(num)
-        self.algorithm2.add_process(num)
-        self.algorithm3.add_process(num)
-        self.algorithm4.add_process(num)
-        self.algorithm5.add_process(num)
-        self.ui.lineEdit_3.clear()
-        self.update_data()
-    
+        try:
+            num = int(str(self.ui.lineEdit_3.text()))
+            self.algorithm.add_process(num)
+            self.algorithm2.add_process(num)
+            self.algorithm3.add_process(num)
+            self.algorithm4.add_process(num)
+            self.algorithm5.add_process(num)
+            self.ui.lineEdit_3.clear()
+            self.update_data()
+        except ValueError:
+            pass
     def line_rr_sjf(self):
-        num = int(str(self.ui.lineEdit.text()))
-        self.algorithm.add_process(num)
-        self.algorithm2.add_process(num)
-        self.algorithm3.add_process(num)
-        self.algorithm4.add_process(num)
-        self.algorithm5.add_process(num)
-        self.ui.lineEdit.clear()
-        self.update_data()
-    
+        try:
+            num = int(str(self.ui.lineEdit.text()))
+            self.algorithm.add_process(num)
+            self.algorithm2.add_process(num)
+            self.algorithm3.add_process(num)
+            self.algorithm4.add_process(num)
+            self.algorithm5.add_process(num)
+            self.ui.lineEdit.clear()
+            self.update_data()
+        except ValueError:
+            pass
     def cleaning(self):
         self.algorithm.clean()
         self.algorithm2.clean()
@@ -167,35 +180,37 @@ class MainWindow(QMainWindow):
         self.update_data()
 
     def calculating(self):
-        self.algorithm.time_calculate()
-        self.algorithm2.time_calculate()
-        self.algorithm3.time_calculate()
-        self.algorithm4.time_calculate()
-        self.algorithm5.time_calculate()
-        # fcfs
-        self.ui.label_fcfs_wait.setText(str(self.algorithm.avg_wait))
-        self.ui.label_fcfs_all.setText(str(self.algorithm.avg_all))
-        # rr
-        self.ui.label_rr_t.setText(str(self.algorithm2.T))
-        self.ui.label_rr_m.setText(str(self.algorithm2.M))
-        self.ui.label_rr_r.setText(str(self.algorithm2.R))
-        self.ui.label_rr_p.setText(str(self.algorithm2.P))
-        # sjf
-        self.ui.label_sjf_t.setText(str(self.algorithm3.T))
-        self.ui.label_sjf_m.setText(str(self.algorithm3.M))
-        self.ui.label_sjf_r.setText(str(self.algorithm3.R))
-        self.ui.label_sjf_p.setText(str(self.algorithm3.P))
-        # psjf
-        self.ui.label_psjf_psjf_t.setText(str(self.algorithm4.T))
-        self.ui.label_psjf_psjf_m.setText(str(self.algorithm4.M))
-        self.ui.label_psjf_psjf_m_2.setText(str(self.algorithm4.R))
-        self.ui.label_psjf_psjf_p.setText(str(self.algorithm4.P))
-        # rr_sjf 
-        self.ui.label_rr_sjf_t.setText(str(self.algorithm2.T))
-        self.ui.label_rr_sjf_m.setText(str(self.algorithm2.M))
-        self.ui.label_rr_sjf_r.setText(str(self.algorithm2.R))
-        self.ui.label_rr_sjf_p.setText(str(self.algorithm2.P))
-
+        try:    
+            self.algorithm.time_calculate()
+            self.algorithm2.time_calculate()
+            self.algorithm3.time_calculate()
+            self.algorithm4.time_calculate()
+            self.algorithm5.time_calculate()
+            # fcfs
+            self.ui.label_fcfs_wait.setText(str(self.algorithm.avg_wait))
+            self.ui.label_fcfs_all.setText(str(self.algorithm.avg_all))
+            # rr
+            self.ui.label_rr_t.setText(str(self.algorithm2.T))
+            self.ui.label_rr_m.setText(str(self.algorithm2.M))
+            self.ui.label_rr_r.setText(str(self.algorithm2.R))
+            self.ui.label_rr_p.setText(str(self.algorithm2.P))
+            # sjf
+            self.ui.label_sjf_t.setText(str(self.algorithm3.T))
+            self.ui.label_sjf_m.setText(str(self.algorithm3.M))
+            self.ui.label_sjf_r.setText(str(self.algorithm3.R))
+            self.ui.label_sjf_p.setText(str(self.algorithm3.P))
+            # psjf
+            self.ui.label_psjf_psjf_t.setText(str(self.algorithm4.T))
+            self.ui.label_psjf_psjf_m.setText(str(self.algorithm4.M))
+            self.ui.label_psjf_psjf_m_2.setText(str(self.algorithm4.R))
+            self.ui.label_psjf_psjf_p.setText(str(self.algorithm4.P))
+            # rr_sjf 
+            self.ui.label_rr_sjf_t.setText(str(self.algorithm2.T))
+            self.ui.label_rr_sjf_m.setText(str(self.algorithm2.M))
+            self.ui.label_rr_sjf_r.setText(str(self.algorithm2.R))
+            self.ui.label_rr_sjf_p.setText(str(self.algorithm2.P))
+        except AttributeError:
+            pass
 def create_app():
     
     app = QApplication(sys.argv)

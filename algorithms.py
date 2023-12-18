@@ -20,8 +20,11 @@ class FCFS():
             self.visual_representation[i] = len(self.visual_representation[i-1])*['    Г'] + self.processes[i]*['    И']
 
     def time_calculate(self):
-        self.avg_wait = round(sum(i.count('    Г') for i in self.visual_representation)/len(self.processes),2)
-        self.avg_all = round(sum(len(i) for i in self.visual_representation)/len(self.processes),2)
+        try:
+            self.avg_wait = round(sum(i.count('    Г') for i in self.visual_representation)/len(self.processes),2)
+            self.avg_all = round(sum(len(i) for i in self.visual_representation)/len(self.processes),2)
+        except (ZeroDivisionError, AttributeError):
+            pass
     
     def __str__(self) -> str:
         self.time_calculate()
@@ -52,10 +55,13 @@ class RR(FCFS):
                         process[i]-=q
     
     def time_calculate(self):
-        self.T = round(sum(len(i) for i in self.visual_representation)/len(self.processes),2)
-        self.M = round(sum(i.count('    Г') for i in self.visual_representation)/len(self.processes),2)
-        self.R = round(sum(i.count('    И') for i in self.visual_representation)/sum(len(i) for i in self.visual_representation),2)
-        self.P = round((self.T*len(self.processes))/sum(i.count('    И') for i in self.visual_representation),2)
+        try:
+            self.T = round(sum(len(i) for i in self.visual_representation)/len(self.processes),2)
+            self.M = round(sum(i.count('    Г') for i in self.visual_representation)/len(self.processes),2)
+            self.R = round(sum(i.count('    И') for i in self.visual_representation)/sum(len(i) for i in self.visual_representation),2)
+            self.P = round((self.T*len(self.processes))/sum(i.count('    И') for i in self.visual_representation),2)
+        except (ZeroDivisionError, AttributeError):
+            pass
     def __str__(self) -> str:
         self.time_calculate()
         return ('\n'.join([' '.join(i) for i in self.visual_representation])
