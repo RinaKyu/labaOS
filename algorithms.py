@@ -17,9 +17,13 @@ class FCFS():
 
         for i in range(len(self.processes)):
             self.visual_representation[i] = len(self.visual_representation[i-1])*['    Г'] + self.processes[i]*['    И']
-
+    def time_calculate(self):
+        self.avg_wait = sum(i.count('    Г') for i in self.visual_representation)/len(self.processes)
+        self.avg_all = sum(len(i) for i in self.visual_representation)/len(self.processes)
+    
     def __str__(self) -> str:
-        return '\n'.join([' '.join(i) for i in self.visual_representation])
+        self.time_calculate()
+        return ('\n'.join([' '.join(i) for i in self.visual_representation])+f'\n avg_wait = {self.avg_wait}\n avg_all = {self.avg_all}')
 
 # if __name__ == '__main__':
     # a = FCFS()
@@ -28,7 +32,9 @@ class FCFS():
     # a.add_process(1)
     # print(a)
 a = FCFS()
-a.add_process(13)
-a.add_process(4)
-a.add_process(1)
+# a.add_process(13)
+# a.add_process(4)
+# a.add_process(1)
+for i in range(20):
+    a.add_process(2)
 print(a)
