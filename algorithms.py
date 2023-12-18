@@ -1,4 +1,3 @@
-from collections import deque
 class FCFS():
 
     def __init__(self):
@@ -108,23 +107,3 @@ class RR_SJF(RR):
                     
                     
         self.visual_representation = vr
-
-
-
-
-# if __name__ == '__main__':
-    # a = FCFS()
-    # a.add_process(13)
-    # a.add_process(4)
-    # a.add_process(1)
-    # print(a)
-# a = RR_SJF()
-
-# a.add_process(13)
-# a.add_process(4)
-# a.add_process(1)
-# a.add_process(3)
-# a.add_process(5)
-# # for i in range(20):
-# #     a.add_process(2)
-# print(a)
