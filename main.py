@@ -1,6 +1,6 @@
 import sys
-from PyQt5 import QtWidgets
-from PyQt5.QtWidgets import QDialog, QApplication, QMainWindow, QTableWidgetItem
+from PyQt5 import QtGui
+from PyQt5.QtWidgets import QApplication, QMainWindow, QTableWidgetItem
 from main_ui import Ui_MainWindow
 from algorithms import *
 
@@ -216,6 +216,7 @@ def create_app():
     app = QApplication(sys.argv)
     window = MainWindow()
     window.show()
+    app.setWindowIcon(QtGui.QIcon('logo.png'))
     try:
         sys.exit(app.exec_())
     except:
