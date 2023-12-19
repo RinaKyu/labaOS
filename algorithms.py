@@ -110,10 +110,13 @@ class RR_SJF(RR):
                                 self.visual_representation[j] += q*['    Г']
                         process[i]-=q
         vr = [[] for i in self.processes]
+        used = []
         for i in range(len(self.processes)):
             for j in range(len(self.visual_representation)):
-                if (self.visual_representation[i].count('    И') == self.processes[j]):
-                    vr[j] = self.visual_representation[i]
+                if (self.visual_representation[i].count('    И') == self.processes[j]) and j not in used:
+                    vr[i] = self.visual_representation[j]
+                    used.append(j)
+                    break
                     
                     
         self.visual_representation = vr
