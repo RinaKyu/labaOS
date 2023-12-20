@@ -22,7 +22,14 @@ class Ui_MainWindow(object):
         MainWindow.setSizePolicy(sizePolicy)
         MainWindow.setMinimumSize(QtCore.QSize(624, 540))
         MainWindow.setMaximumSize(QtCore.QSize(800, 540))
-        MainWindow.setStyleSheet("")
+        MainWindow.setStyleSheet("QPushButton {\n"
+"background-color: rgb(81,129,184);\n"
+"color: rgb(255, 255, 255);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"background-color: rgb(0,0,0);\n"
+"color: rgb(255, 255, 255);\n"
+"}")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.tabWidget = QtWidgets.QTabWidget(self.centralwidget)
@@ -43,21 +50,45 @@ class Ui_MainWindow(object):
         self.lineEdit_6.setObjectName("lineEdit_6")
         self.pushButton_11 = QtWidgets.QPushButton(self.tab)
         self.pushButton_11.setGeometry(QtCore.QRect(20, 430, 111, 24))
-        self.pushButton_11.setStyleSheet("background-color: rgb(81,129,184);\n"
-"color: rgb(255, 255, 255);")
+        self.pushButton_11.setStyleSheet("QPushButton {\n"
+"background-color: rgb(81,129,184);\n"
+"color: rgb(255, 255, 255);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"background-color: rgb(69, 111, 158);\n"
+"color: rgb(255, 255, 255);\n"
+"}")
         self.pushButton_11.setObjectName("pushButton_11")
         self.label_27 = QtWidgets.QLabel(self.tab)
         self.label_27.setGeometry(QtCore.QRect(20, 350, 121, 20))
         self.label_27.setObjectName("label_27")
         self.pushButton_12 = QtWidgets.QPushButton(self.tab)
         self.pushButton_12.setGeometry(QtCore.QRect(20, 400, 111, 24))
-        self.pushButton_12.setStyleSheet("background-color: rgb(81,129,184);\n"
-"color: rgb(255, 255, 255);")
+        self.pushButton_12.setAutoFillBackground(False)
+        self.pushButton_12.setStyleSheet("QPushButton {\n"
+"background-color: rgb(81,129,184);\n"
+"color: rgb(255, 255, 255);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"background-color: rgb(69, 111, 158);\n"
+"color: rgb(255, 255, 255);\n"
+"}")
+        self.pushButton_12.setCheckable(False)
+        self.pushButton_12.setChecked(False)
+        self.pushButton_12.setAutoDefault(False)
+        self.pushButton_12.setDefault(False)
+        self.pushButton_12.setFlat(False)
         self.pushButton_12.setObjectName("pushButton_12")
         self.pushButton_14 = QtWidgets.QPushButton(self.tab)
         self.pushButton_14.setGeometry(QtCore.QRect(20, 460, 111, 24))
-        self.pushButton_14.setStyleSheet("background-color: rgb(81,129,184);\n"
-"color: rgb(255, 255, 255);")
+        self.pushButton_14.setStyleSheet("QPushButton {\n"
+"background-color: rgb(81,129,184);\n"
+"color: rgb(255, 255, 255);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"background-color: rgb(69, 111, 158);\n"
+"color: rgb(255, 255, 255);\n"
+"}")
         self.pushButton_14.setObjectName("pushButton_14")
         self.tableWidget_fcfs = QtWidgets.QTableWidget(self.tab)
         self.tableWidget_fcfs.setGeometry(QtCore.QRect(10, 10, 775, 321))
@@ -104,8 +135,14 @@ class Ui_MainWindow(object):
         self.lineEdit_5.setObjectName("lineEdit_5")
         self.pushButton_9 = QtWidgets.QPushButton(self.tab_2)
         self.pushButton_9.setGeometry(QtCore.QRect(20, 430, 111, 24))
-        self.pushButton_9.setStyleSheet("background-color: rgb(81,129,184);\n"
-"color: rgb(255, 255, 255);")
+        self.pushButton_9.setStyleSheet("QPushButton {\n"
+"background-color: rgb(81,129,184);\n"
+"color: rgb(255, 255, 255);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"background-color: rgb(69, 111, 158);\n"
+"color: rgb(255, 255, 255);\n"
+"}")
         self.pushButton_9.setObjectName("pushButton_9")
         self.label_rr_t = QtWidgets.QLabel(self.tab_2)
         self.label_rr_t.setGeometry(QtCore.QRect(170, 370, 61, 16))
@@ -138,16 +175,28 @@ class Ui_MainWindow(object):
         self.label_24.setObjectName("label_24")
         self.pushButton_10 = QtWidgets.QPushButton(self.tab_2)
         self.pushButton_10.setGeometry(QtCore.QRect(20, 400, 111, 24))
-        self.pushButton_10.setStyleSheet("background-color: rgb(81,129,184);\n"
-"color: rgb(255, 255, 255);")
+        self.pushButton_10.setStyleSheet("QPushButton {\n"
+"background-color: rgb(81,129,184);\n"
+"color: rgb(255, 255, 255);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"background-color: rgb(69, 111, 158);\n"
+"color: rgb(255, 255, 255);\n"
+"}")
         self.pushButton_10.setObjectName("pushButton_10")
         self.label_25 = QtWidgets.QLabel(self.tab_2)
         self.label_25.setGeometry(QtCore.QRect(170, 350, 201, 16))
         self.label_25.setObjectName("label_25")
         self.pushButton_13 = QtWidgets.QPushButton(self.tab_2)
         self.pushButton_13.setGeometry(QtCore.QRect(20, 460, 111, 24))
-        self.pushButton_13.setStyleSheet("background-color: rgb(81,129,184);\n"
-"color: rgb(255, 255, 255);")
+        self.pushButton_13.setStyleSheet("QPushButton {\n"
+"background-color: rgb(81,129,184);\n"
+"color: rgb(255, 255, 255);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"background-color: rgb(69, 111, 158);\n"
+"color: rgb(255, 255, 255);\n"
+"}")
         self.pushButton_13.setObjectName("pushButton_13")
         self.tableWidget_rr = QtWidgets.QTableWidget(self.tab_2)
         self.tableWidget_rr.setGeometry(QtCore.QRect(10, 10, 775, 321))
@@ -170,8 +219,14 @@ class Ui_MainWindow(object):
         self.lineEdit_4.setObjectName("lineEdit_4")
         self.pushButton_7 = QtWidgets.QPushButton(self.tab_3)
         self.pushButton_7.setGeometry(QtCore.QRect(20, 430, 111, 24))
-        self.pushButton_7.setStyleSheet("background-color: rgb(81,129,184);\n"
-"color: rgb(255, 255, 255);")
+        self.pushButton_7.setStyleSheet("QPushButton {\n"
+"background-color: rgb(81,129,184);\n"
+"color: rgb(255, 255, 255);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"background-color: rgb(69, 111, 158);\n"
+"color: rgb(255, 255, 255);\n"
+"}")
         self.pushButton_7.setObjectName("pushButton_7")
         self.label_sjf_t = QtWidgets.QLabel(self.tab_3)
         self.label_sjf_t.setGeometry(QtCore.QRect(170, 370, 61, 16))
@@ -204,16 +259,28 @@ class Ui_MainWindow(object):
         self.label_19.setObjectName("label_19")
         self.pushButton_8 = QtWidgets.QPushButton(self.tab_3)
         self.pushButton_8.setGeometry(QtCore.QRect(20, 400, 111, 24))
-        self.pushButton_8.setStyleSheet("background-color: rgb(81,129,184);\n"
-"color: rgb(255, 255, 255);")
+        self.pushButton_8.setStyleSheet("QPushButton {\n"
+"background-color: rgb(81,129,184);\n"
+"color: rgb(255, 255, 255);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"background-color: rgb(69, 111, 158);\n"
+"color: rgb(255, 255, 255);\n"
+"}")
         self.pushButton_8.setObjectName("pushButton_8")
         self.label_20 = QtWidgets.QLabel(self.tab_3)
         self.label_20.setGeometry(QtCore.QRect(170, 350, 191, 16))
         self.label_20.setObjectName("label_20")
         self.pushButton_15 = QtWidgets.QPushButton(self.tab_3)
         self.pushButton_15.setGeometry(QtCore.QRect(20, 460, 111, 24))
-        self.pushButton_15.setStyleSheet("background-color: rgb(81,129,184);\n"
-"color: rgb(255, 255, 255);")
+        self.pushButton_15.setStyleSheet("QPushButton {\n"
+"background-color: rgb(81,129,184);\n"
+"color: rgb(255, 255, 255);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"background-color: rgb(69, 111, 158);\n"
+"color: rgb(255, 255, 255);\n"
+"}")
         self.pushButton_15.setObjectName("pushButton_15")
         self.tableWidget_sjf = QtWidgets.QTableWidget(self.tab_3)
         self.tableWidget_sjf.setGeometry(QtCore.QRect(10, 10, 775, 321))
@@ -250,8 +317,14 @@ class Ui_MainWindow(object):
         self.lineEdit_3.setObjectName("lineEdit_3")
         self.pushButton_5 = QtWidgets.QPushButton(self.tab_4)
         self.pushButton_5.setGeometry(QtCore.QRect(20, 430, 111, 24))
-        self.pushButton_5.setStyleSheet("background-color: rgb(81,129,184);\n"
-"color: rgb(255, 255, 255);")
+        self.pushButton_5.setStyleSheet("QPushButton {\n"
+"background-color: rgb(81,129,184);\n"
+"color: rgb(255, 255, 255);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"background-color: rgb(69, 111, 158);\n"
+"color: rgb(255, 255, 255);\n"
+"}")
         self.pushButton_5.setObjectName("pushButton_5")
         self.label_psjf_psjf_t = QtWidgets.QLabel(self.tab_4)
         self.label_psjf_psjf_t.setGeometry(QtCore.QRect(170, 370, 61, 16))
@@ -284,16 +357,28 @@ class Ui_MainWindow(object):
         self.label_14.setObjectName("label_14")
         self.pushButton_6 = QtWidgets.QPushButton(self.tab_4)
         self.pushButton_6.setGeometry(QtCore.QRect(20, 400, 111, 24))
-        self.pushButton_6.setStyleSheet("background-color: rgb(81,129,184);\n"
-"color: rgb(255, 255, 255);")
+        self.pushButton_6.setStyleSheet("QPushButton {\n"
+"background-color: rgb(81,129,184);\n"
+"color: rgb(255, 255, 255);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"background-color: rgb(69, 111, 158);\n"
+"color: rgb(255, 255, 255);\n"
+"}")
         self.pushButton_6.setObjectName("pushButton_6")
         self.label_15 = QtWidgets.QLabel(self.tab_4)
         self.label_15.setGeometry(QtCore.QRect(170, 350, 201, 16))
         self.label_15.setObjectName("label_15")
         self.pushButton_16 = QtWidgets.QPushButton(self.tab_4)
         self.pushButton_16.setGeometry(QtCore.QRect(20, 460, 111, 24))
-        self.pushButton_16.setStyleSheet("background-color: rgb(81,129,184);\n"
-"color: rgb(255, 255, 255);")
+        self.pushButton_16.setStyleSheet("QPushButton {\n"
+"background-color: rgb(81,129,184);\n"
+"color: rgb(255, 255, 255);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"background-color: rgb(69, 111, 158);\n"
+"color: rgb(255, 255, 255);\n"
+"}")
         self.pushButton_16.setObjectName("pushButton_16")
         self.tableWidget_psjf_psjf = QtWidgets.QTableWidget(self.tab_4)
         self.tableWidget_psjf_psjf.setGeometry(QtCore.QRect(10, 10, 775, 321))
@@ -316,13 +401,25 @@ class Ui_MainWindow(object):
         self.label.setObjectName("label")
         self.pushButton = QtWidgets.QPushButton(self.tab_5)
         self.pushButton.setGeometry(QtCore.QRect(20, 400, 111, 24))
-        self.pushButton.setStyleSheet("background-color: rgb(81,129,184);\n"
-"color: rgb(255, 255, 255);")
+        self.pushButton.setStyleSheet("QPushButton {\n"
+"background-color: rgb(81,129,184);\n"
+"color: rgb(255, 255, 255);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"background-color: rgb(69, 111, 158);\n"
+"color: rgb(255, 255, 255);\n"
+"}")
         self.pushButton.setObjectName("pushButton")
         self.pushButton_2 = QtWidgets.QPushButton(self.tab_5)
         self.pushButton_2.setGeometry(QtCore.QRect(20, 430, 111, 24))
-        self.pushButton_2.setStyleSheet("background-color: rgb(81,129,184);\n"
-"color: rgb(255, 255, 255);")
+        self.pushButton_2.setStyleSheet("QPushButton {\n"
+"background-color: rgb(81,129,184);\n"
+"color: rgb(255, 255, 255);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"background-color: rgb(69, 111, 158);\n"
+"color: rgb(255, 255, 255);\n"
+"}")
         self.pushButton_2.setObjectName("pushButton_2")
         self.label_2 = QtWidgets.QLabel(self.tab_5)
         self.label_2.setGeometry(QtCore.QRect(170, 350, 211, 16))
@@ -369,8 +466,14 @@ class Ui_MainWindow(object):
         self.tableWidget_rr_sjf.setRowCount(0)
         self.pushButton_17 = QtWidgets.QPushButton(self.tab_5)
         self.pushButton_17.setGeometry(QtCore.QRect(20, 460, 111, 24))
-        self.pushButton_17.setStyleSheet("background-color: rgb(81,129,184);\n"
-"color: rgb(255, 255, 255);")
+        self.pushButton_17.setStyleSheet("QPushButton {\n"
+"background-color: rgb(81,129,184);\n"
+"color: rgb(255, 255, 255);\n"
+"}\n"
+"QPushButton:pressed {\n"
+"background-color: rgb(69, 111, 158);\n"
+"color: rgb(255, 255, 255);\n"
+"}")
         self.pushButton_17.setObjectName("pushButton_17")
         self.tabWidget.addTab(self.tab_5, "")
         MainWindow.setCentralWidget(self.centralwidget)

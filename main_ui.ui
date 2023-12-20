@@ -32,7 +32,14 @@
    <string>Algorithms</string>
   </property>
   <property name="styleSheet">
-   <string notr="true"/>
+   <string notr="true">QPushButton {
+background-color: rgb(81,129,184);
+color: rgb(255, 255, 255);
+}
+QPushButton:pressed {
+background-color: rgb(0,0,0);
+color: rgb(255, 255, 255);
+}</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QTabWidget" name="tabWidget">
@@ -93,8 +100,14 @@ background-color: rgb(255,255,255);</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(81,129,184);
-color: rgb(255, 255, 255);</string>
+       <string notr="true">QPushButton {
+background-color: rgb(81,129,184);
+color: rgb(255, 255, 255);
+}
+QPushButton:pressed {
+background-color: rgb(69, 111, 158);
+color: rgb(255, 255, 255);
+}</string>
       </property>
       <property name="text">
        <string>Сброс</string>
@@ -122,12 +135,36 @@ color: rgb(255, 255, 255);</string>
         <height>24</height>
        </rect>
       </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(81,129,184);
-color: rgb(255, 255, 255);</string>
+       <string notr="true">QPushButton {
+background-color: rgb(81,129,184);
+color: rgb(255, 255, 255);
+}
+QPushButton:pressed {
+background-color: rgb(69, 111, 158);
+color: rgb(255, 255, 255);
+}</string>
       </property>
       <property name="text">
        <string>Добавить</string>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
       </property>
      </widget>
      <widget class="QPushButton" name="pushButton_14">
@@ -140,8 +177,14 @@ color: rgb(255, 255, 255);</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(81,129,184);
-color: rgb(255, 255, 255);</string>
+       <string notr="true">QPushButton {
+background-color: rgb(81,129,184);
+color: rgb(255, 255, 255);
+}
+QPushButton:pressed {
+background-color: rgb(69, 111, 158);
+color: rgb(255, 255, 255);
+}</string>
       </property>
       <property name="text">
        <string>Вычислить</string>
@@ -290,8 +333,14 @@ background-color: rgb(255,255,255);</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(81,129,184);
-color: rgb(255, 255, 255);</string>
+       <string notr="true">QPushButton {
+background-color: rgb(81,129,184);
+color: rgb(255, 255, 255);
+}
+QPushButton:pressed {
+background-color: rgb(69, 111, 158);
+color: rgb(255, 255, 255);
+}</string>
       </property>
       <property name="text">
        <string>Сброс</string>
@@ -422,8 +471,14 @@ color: rgb(255, 255, 255);</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(81,129,184);
-color: rgb(255, 255, 255);</string>
+       <string notr="true">QPushButton {
+background-color: rgb(81,129,184);
+color: rgb(255, 255, 255);
+}
+QPushButton:pressed {
+background-color: rgb(69, 111, 158);
+color: rgb(255, 255, 255);
+}</string>
       </property>
       <property name="text">
        <string>Добавить</string>
@@ -452,8 +507,14 @@ color: rgb(255, 255, 255);</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(81,129,184);
-color: rgb(255, 255, 255);</string>
+       <string notr="true">QPushButton {
+background-color: rgb(81,129,184);
+color: rgb(255, 255, 255);
+}
+QPushButton:pressed {
+background-color: rgb(69, 111, 158);
+color: rgb(255, 255, 255);
+}</string>
       </property>
       <property name="text">
        <string>Вычислить</string>
@@ -518,8 +579,14 @@ background-color: rgb(255,255,255);</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(81,129,184);
-color: rgb(255, 255, 255);</string>
+       <string notr="true">QPushButton {
+background-color: rgb(81,129,184);
+color: rgb(255, 255, 255);
+}
+QPushButton:pressed {
+background-color: rgb(69, 111, 158);
+color: rgb(255, 255, 255);
+}</string>
       </property>
       <property name="text">
        <string>Сброс</string>
@@ -650,8 +717,14 @@ color: rgb(255, 255, 255);</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(81,129,184);
-color: rgb(255, 255, 255);</string>
+       <string notr="true">QPushButton {
+background-color: rgb(81,129,184);
+color: rgb(255, 255, 255);
+}
+QPushButton:pressed {
+background-color: rgb(69, 111, 158);
+color: rgb(255, 255, 255);
+}</string>
       </property>
       <property name="text">
        <string>Добавить</string>
@@ -680,8 +753,14 @@ color: rgb(255, 255, 255);</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(81,129,184);
-color: rgb(255, 255, 255);</string>
+       <string notr="true">QPushButton {
+background-color: rgb(81,129,184);
+color: rgb(255, 255, 255);
+}
+QPushButton:pressed {
+background-color: rgb(69, 111, 158);
+color: rgb(255, 255, 255);
+}</string>
       </property>
       <property name="text">
        <string>Вычислить</string>
@@ -760,8 +839,14 @@ background-color: rgb(255,255,255);</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(81,129,184);
-color: rgb(255, 255, 255);</string>
+       <string notr="true">QPushButton {
+background-color: rgb(81,129,184);
+color: rgb(255, 255, 255);
+}
+QPushButton:pressed {
+background-color: rgb(69, 111, 158);
+color: rgb(255, 255, 255);
+}</string>
       </property>
       <property name="text">
        <string>Сброс</string>
@@ -892,8 +977,14 @@ color: rgb(255, 255, 255);</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(81,129,184);
-color: rgb(255, 255, 255);</string>
+       <string notr="true">QPushButton {
+background-color: rgb(81,129,184);
+color: rgb(255, 255, 255);
+}
+QPushButton:pressed {
+background-color: rgb(69, 111, 158);
+color: rgb(255, 255, 255);
+}</string>
       </property>
       <property name="text">
        <string>Добавить</string>
@@ -922,8 +1013,14 @@ color: rgb(255, 255, 255);</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(81,129,184);
-color: rgb(255, 255, 255);</string>
+       <string notr="true">QPushButton {
+background-color: rgb(81,129,184);
+color: rgb(255, 255, 255);
+}
+QPushButton:pressed {
+background-color: rgb(69, 111, 158);
+color: rgb(255, 255, 255);
+}</string>
       </property>
       <property name="text">
        <string>Вычислить</string>
@@ -988,8 +1085,14 @@ background-color: rgb(255,255,255);</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(81,129,184);
-color: rgb(255, 255, 255);</string>
+       <string notr="true">QPushButton {
+background-color: rgb(81,129,184);
+color: rgb(255, 255, 255);
+}
+QPushButton:pressed {
+background-color: rgb(69, 111, 158);
+color: rgb(255, 255, 255);
+}</string>
       </property>
       <property name="text">
        <string>Добавить</string>
@@ -1005,8 +1108,14 @@ color: rgb(255, 255, 255);</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(81,129,184);
-color: rgb(255, 255, 255);</string>
+       <string notr="true">QPushButton {
+background-color: rgb(81,129,184);
+color: rgb(255, 255, 255);
+}
+QPushButton:pressed {
+background-color: rgb(69, 111, 158);
+color: rgb(255, 255, 255);
+}</string>
       </property>
       <property name="text">
        <string>Сброс</string>
@@ -1177,8 +1286,14 @@ background-color: rgba(237,238,240,150);</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(81,129,184);
-color: rgb(255, 255, 255);</string>
+       <string notr="true">QPushButton {
+background-color: rgb(81,129,184);
+color: rgb(255, 255, 255);
+}
+QPushButton:pressed {
+background-color: rgb(69, 111, 158);
+color: rgb(255, 255, 255);
+}</string>
       </property>
       <property name="text">
        <string>Вычислить</string>
